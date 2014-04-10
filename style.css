@@ -12,6 +12,10 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 @import url("../legenda/style.css");
 
+.container, .page-wrapper, .fixed-header, .fixed-header:hover {
+    background-color: #000 !important;
+}
+
 .fixed-header .menu > li, .main-nav .menu > li {
     display: inline-block;
     padding: 0 15px;
@@ -25,6 +29,12 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 .post-images img, .portfolio-image img {
     border: 1px solid #BAA47B;
     padding: 10px;
+    width: 93%;
+}
+
+/* FORCE BETTER MARGINS ON CATEGORY PAGES */
+.row-fluid [class*="span"] {
+    margin: 0 0.5% 30px !important;
 }
 
 /* FOOTER MENUS */
@@ -49,7 +59,6 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
     margin-left: 0;
     padding: 0;
     text-align: left;
-    color: #007dbf;
     font-size: 16px;
     margin-bottom: 0;
 }
@@ -65,4 +74,13 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 .footer-top ul {
     margin-top: 10px;
     list-style-type: none;
+}
+
+/* DARK FOOTER BG */
+.footer-top.footer-top-3, .footer.footer-bottom-3, .footer.footer-bottom-2, .footer-top.footer-top-3 .container, .footer.footer-bottom-3 .container, .footer.footer-bottom-2 .container, .copyright.copyright-3, .copyright.copyright-2, .copyright.copyright-3 .container, .copyright.copyright-2 .container {
+    background-color: #000 !important;
+}
+
+.title span {
+    background-color: #000 !important;
 }

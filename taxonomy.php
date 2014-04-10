@@ -2,7 +2,6 @@
 	get_header();
 
     $query_obj = get_queried_object();
-dbgx_trace_var( $query_obj, $var_name = false );
     $taxname = $query_obj->name;
 ?>
 
